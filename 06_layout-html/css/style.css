@@ -1,0 +1,335 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font' , sans-serif;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.header-container {
+    width: 1170px;
+	  margin: 0 auto;
+}
+
+.header-sub-container {
+    width: 1170px;
+    height: 54px;
+	  margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.logo {
+  margin: 0;
+  margin-right: 40px;
+}
+
+.header-tel {
+  margin: 0;
+  margin-right: 550px;
+}
+
+.header-navigation {
+  width: 1170px;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-list {
+  justify-content: flex-start;
+}
+
+.nav-btn:not(:last-child) {
+  margin-right: 45px;
+}
+
+/* special offers */
+
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.section-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.special-offers-container {
+  margin: 0 135px;
+  margin-bottom: 70px;
+}
+
+.special-offers-content {
+  min-height: 600px;
+  display: flex;
+}
+
+.special-offers-block {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 30px) / 2);
+}
+.special-offers-block:not(:last-child) {
+  margin-right: 24px;
+}
+
+.special-offer-item {
+  flex: 1;
+  margin-bottom: 24px;
+  padding: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 258px;
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 540px;
+}
+
+.special__item:last-child {
+  margin-bottom: 0;
+}
+
+.special-bg-image-01 {
+  background-image: url("/img/maldives.png");
+}
+
+.special-bg-image-02 {
+  background-image: url("/img/crite.png");
+}
+
+.special-bg-image-03 {
+  background-image: url("/img/luxe.png");
+}
+
+/* about us */
+
+.about-us-container {
+  margin: 0 135px;
+  margin-bottom: 70px;
+}
+
+.about-us-descr {
+  margin: 0;
+}
+
+/* services */
+
+.services-container {
+  margin: 0 120px;
+  margin-bottom: 70px;
+}
+
+.service-list {
+    padding: 0;
+    margin: 0;
+}
+
+.service-list-item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  padding: 191px 45px 45px 45px;
+  margin: 0 24px 24px 0;
+  min-height: 330px;
+  width: 573px;
+}
+
+.service-list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.service-bg-image-01 {
+  background-image: url("/img/service-pic-1.jpg");
+}
+
+.service-bg-image-02 {
+  background-image: url("/img/service-pic-2.jpg");
+}
+
+.service-bg-image-03 {
+  background-image: url("/img/service-pic-3.jpg");
+  margin-bottom: 0;
+}
+
+.service-bg-image-04 {
+  background-image: url("/img/service-pic-4.jpg");
+  margin-bottom: 0;
+}
+
+.service-descr {
+  margin: 0;
+  padding: 0;
+}
+
+/* advantages */
+
+.advantages-container {
+  margin: 0 120px;
+  margin-bottom: 70px;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-list-item {
+    align-items: baseline;
+    background-repeat: no-repeat;
+    padding-top: 116px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    width: 276px;
+    min-height: 276px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.advantages-list-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+
+.bg-image-01 {
+    background-image: url("/img/advantages-icon-01.svg");
+    background-position: 40px 45px;
+}
+
+.bg-image-02 {
+    background-image: url("/img/advantages-icon-02.svg");
+    background-position: 40px 45px;
+}
+
+.bg-image-03 {
+    background-image: url("/img/advantages-icon-03.svg");
+    background-position: 40px 45px;
+}
+
+.bg-image-04 {
+    background-image: url("/img/advantages-icon-04.svg");
+    background-position: 40px 45px;
+}
+
+.bg-image-05 {
+    background-image: url("/img/advantages-icon-05.svg");
+    background-position: 40px 45px;
+    margin-bottom: 0;
+}
+
+.bg-image-06 {
+    background-image: url("/img/advantages-icon-06.svg");
+    background-position: 40px 45px;
+    margin-bottom: 0;
+}
+
+.bg-image-07 {
+    background-image: url("/img/advantages-icon-07.svg");
+    background-position: 40px 45px;
+    margin-bottom: 0;
+}
+
+.bg-image-08 {
+    background-image: url("/img/advantages-icon-08.svg");
+    background-position: 40px 45px;
+    margin-bottom: 0;
+}
+
+.advantages-descr {
+  margin: 0;
+  padding: 0;
+}
+
+/* location */
+
+.locaction-container {
+  margin: 0 120px;
+  margin-bottom: 70px;
+}
+
+.location-item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0 22px 22px 0;
+  width: 374px;
+  height: 440px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.location-content {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 32px;
+}
+
+.price-rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-last-row {
+  margin-bottom: 0;
+}
+
+.see-all-btn {
+    display: inline-block;
+    background-image: url("/img/location-09.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 373px 54px 27px 54px;
+    margin-bottom: 0;
+}
+

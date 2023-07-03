@@ -30,7 +30,7 @@ body {
 @font-face {
   font-family: "Muller";
   src: local("MullerRegular"),
-  url("../§fonts/MullerRegular.woff") format("woff"),
+  url("../fonts/MullerRegular.woff") format("woff"),
   url("../fonts/MullerRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -186,7 +186,6 @@ body {
   margin-left: 40px;
   font-weight: 400;
   font-size: 40px;
-  /* line-height: 40px; */
   color: #333;
 }
 
@@ -228,13 +227,11 @@ body {
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 40px;
-  /* line-height: 40px; */
   color: #fff;
 }
 
 .right-title {
   font-size: 60px;
-  /* line-height: 100%; */
 }
 
 .special-offers-descr {
@@ -242,7 +239,6 @@ body {
   margin-bottom: 47px;
   font-weight: 400;
   font-size: 20px;
-  /* line-height: 20px; */
   color: #FFFFFF;
   opacity: 0.8;
 }
@@ -255,14 +251,12 @@ body {
   max-width: max-content;
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 16px; */
   color: #F0BF5F;
 }
 
 .special-offers-btn {
   display: inline-flex;
   align-items: center;
-  /* margin-bottom: 40px; */
 }
 
 .more-details{
@@ -274,7 +268,6 @@ body {
   align-items: center;
   font-weight: 400;
   font-size: 16px;
-  /* line-height: 16px; */
   color: #F0BF5F;
 }
 
@@ -309,13 +302,16 @@ body {
 
 /* about us */
 
+.about-us {
+  margin-bottom: 70px;
+}
+
 .about-us-descr {
   margin: 0;
   max-width: 890px;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
-  margin-bottom: 70px;
 }
 
 /* services */
@@ -572,6 +568,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     background-image: url("../img/location-09.jpg");
+    background-color: #CC9933;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

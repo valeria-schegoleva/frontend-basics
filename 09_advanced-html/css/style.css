@@ -589,21 +589,24 @@ body {
 /* tour */
 
 .tour {
-  padding: 45px 40px;
-  height: 256px;
-  background-color: #E9E9E9;
-  border-radius: 15px;
   margin-bottom: 70px;
+}
+
+.tour-content {
+  min-height: 256px;
+  padding: 45px 40px;
+  border-radius: 15px;
+  background: #E9E9E9;
 }
 
 .tour-nav {
   display: flex;
   justify-content: space-between;
+  align-content: baseline;
   padding: 31px 28px;
-  width: 1080px;
-  height: 106px;
-  background-color: #FFF;
   border-radius: 15px;
+  background-color: #fff;
+  min-height: 106px;
 }
 
 .tour-form {
@@ -638,9 +641,32 @@ body {
 
  .form-label {
   margin-bottom: 15px;
+  font-size: 12px;
+ }
+
+ .tour-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+ }
+
+ .city-select {
+  border: none;
+ }
+
+ .country-select {
+  border: none;
+ }
+
+ .date-input {
+  border: none;
  }
 
 /* contacts */
+
+.address {
+  font-style: normal;
+}
 
 .contacts {
   margin-bottom: 40px;
@@ -648,19 +674,17 @@ body {
 
 .contacts-box {
   max-width: 1170px;
-  height: 618px;
-  padding-left: 45px;
+  min-height: 618px;
+  padding: 45px;
   border-radius: 15px;
   background: #FFF;
-  background-image: url('../img/contacts-pic.png');
-  background-repeat: no-repeat;
-  background-position: 472px 45px;
 }
 
 .contacts-list {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  min-width: 375px;
+  margin-right: 52px;
 }
 
 .contacts-item {
@@ -673,12 +697,17 @@ body {
   border-bottom: 1px solid #E9E9E9;
 }
 
+.contacts-item:first-child {
+  padding-top: 0;
+}
+
 .contacts-item:last-child {
   margin-bottom: 45px;
 }
 
 .contacts-descr {
   max-width: 225px;
+  line-height: 150%;
 }
 
 .contacts-title {
@@ -705,8 +734,14 @@ body {
   font-weight: 400;
 }
 
+.contacts-image {
+  min-width: 653px;
+  height: cover;
+}
+
 .get-direction {
   display: flex;
+  justify-content: center;
   height: 70px;
   padding: 30px;
   font-weight: 400;
@@ -718,8 +753,9 @@ body {
 
 /* footer */
 
-.footer {
-margin-left: 135px;
+.container {
+  margin-left: 135px;
+  margin-right: 135px;
 }
 
 .footer-box {
@@ -728,9 +764,7 @@ margin-left: 135px;
   width: 1170px;
   height: 340px;
   border-radius: 15px;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 45px;
+  padding: 45px;
   background: #333;
   background-image: url('../img/footer-logo.png');
   background-repeat: no-repeat;
@@ -740,6 +774,7 @@ margin-left: 135px;
 .footer-text-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer-text-middle {
@@ -758,10 +793,23 @@ margin-left: 135px;
   line-height: 190%;
  }
 
+ .right {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+ }
+
 .user-consent {
   color: #C93;
   font-size: 16px;
   font-weight: 400;
+}
+
+.footer-tel-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .footer-tel {
@@ -769,10 +817,6 @@ margin-left: 135px;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-}
-
-.footer-tel:last-child {
-  margin-bottom: 15px;
 }
 
 .footer-email {

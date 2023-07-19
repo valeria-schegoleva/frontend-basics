@@ -183,7 +183,7 @@ body {
 .section-title {
   margin: 0;
   margin-bottom: 20px;
-  margin-left: 40px;
+  margin-left: 0;
   font-weight: 400;
   font-size: 40px;
   color: #333;
@@ -648,6 +648,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
+  width: 120px;
  }
 
  .city-select {
@@ -753,20 +754,15 @@ body {
 
 /* footer */
 
-.container {
-  margin-left: 135px;
-  margin-right: 135px;
-}
-
 .footer-box {
   display: flex;
-  justify-content: space-between;
+  /* gap: 123px; */
   width: 1170px;
-  height: 340px;
+  min-height: 340px;
   border-radius: 15px;
   padding: 45px;
   background: #333;
-  background-image: url('../img/footer-logo.png');
+  background-image: url('img/footer-logo.png');
   background-repeat: no-repeat;
   background-position: 739px 112px;
 }
@@ -775,11 +771,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 123px;
 }
 
 .footer-text-middle {
   display: flex;
   flex-direction: column;
+  margin-right: 270px;
 }
 
 .footer-text {

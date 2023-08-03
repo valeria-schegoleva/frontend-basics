@@ -770,7 +770,7 @@ body {
   background: #333;
   background-image: url('../img/footer-logo.png');
   background-repeat: no-repeat;
-  background-position: 739px 112px;
+  background-position: 739px bottom;
 }
 
 .footer-text-left {

@@ -307,11 +307,15 @@ body {
   flex: 1;
   margin-bottom: 24px;
   padding: 40px;
-  /* background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 258px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.special-offer-item svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .special-offer-item:last-child {
@@ -319,7 +323,7 @@ body {
 }
 
 .special-offer-item:focus-visible {
-  outline: 0;
+  /* outline: 0; */
   outline: 1px solid #C93;
   outline-offset: 8px;
 }
@@ -378,8 +382,6 @@ body {
 .more-details:active:not(:focus-visible) {
   color: #FFF;
 }
-
-
 
 .special-offer-details {
   display: inline-flex;
@@ -459,8 +461,17 @@ body {
   min-height: 330px;
   width: 573px;
   background-color: #FFFFFF;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+.service-list-item:focus-visible {
+  outline: solid 1px #CC9933;
+  outline-offset: 8px;
+}
+
+.service-list-item svg path {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
 .service-btn {
   display: inline-flex;
@@ -469,8 +480,6 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  overflow: visible;
 }
 
 .service-btn:hover:not(:focus-visible) svg path {
@@ -480,6 +489,14 @@ body {
 
 .service-btn:hover:not(:focus-visible) {
   color: #F0BF5F;
+}
+
+.service-btn:active:not(:focus-visible) {
+  color: #A47312;
+}
+
+.service-btn:active:not(:focus-visible) svg path {
+  stroke: #A47312;
 }
 
 .service-more-details {
@@ -748,6 +765,15 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #FFF;
+  transition: transform 0.3s ease-in-out;
+}
+
+.see-all-btn svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.see-all-btn:hover:not(:focus-visible) svg {
+  transform: translateX(5px);
 }
 
 /* tour */
@@ -929,7 +955,7 @@ body {
 }
 
 .tel:hover:not(:focus-visible) {
-  color: #CC9933;
+  color: var(--yellow-one);
 }
 
 .tel:active:not(:focus-visible) {
@@ -945,7 +971,10 @@ body {
   display: flex;
   justify-content: center;
   height: 70px;
-  padding: 30px;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  padding-left: 30px;
   font-weight: 400;
   font-size: 16px;
   color: #CC9933;
@@ -1020,6 +1049,15 @@ body {
   color: #C93;
   font-size: 16px;
   font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+.user-consent:hover:not(:focus-visible) {
+  color: var(--yellow-one);
+}
+
+.user-consent:active:not(:focus-visible) {
+  color: var(--yellow-three);
 }
 
 .footer-tel-box {
@@ -1033,6 +1071,15 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  transition: 0.3s color ease-in-out;
+}
+
+.footer-tel:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.footer-tel:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .footer-email {

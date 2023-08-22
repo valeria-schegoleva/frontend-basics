@@ -524,7 +524,7 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .service-btn::before {
@@ -1192,6 +1192,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  outline: 0;
   transition: fill 0.3s ease-in-out;
 }
 

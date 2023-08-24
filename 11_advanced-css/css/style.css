@@ -27,6 +27,19 @@ body {
   background-color: #F1F1F1;
 }
 
+:root {
+  --yellow-one:#F0BF5F;
+  --yellow-two: #C93;
+  --yellow-three: #A47312;
+  --light-blue: #CEE8FA;
+  --white: #F1F1F1;
+  --grey-one: #E9E9E9;
+  --grey-two: #999;
+  --grey-three: #666;
+  --black-one: #333;
+  --black-two: #000;
+}
+
 @font-face {
   font-family: "Muller";
   src: local("MullerRegular"),
@@ -88,7 +101,6 @@ body {
 .container {
     width: 1170px;
 	  margin: 0 auto;
-    /* padding-left: 40px; */
 }
 
 .header {
@@ -117,6 +129,21 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-tel:hover:not(:focus-visible) {
+  color: #CC9933;
+}
+
+.header-tel:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+}
+
+.header-tel:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .header-logo {
@@ -147,6 +174,25 @@ body {
   color: #666;
 }
 
+.header-link {
+  transition: color, border-color 0.3s ease-in-out;
+}
+
+.header-link:hover:not(:focus-visible) {
+  color: #CC9933;
+}
+
+.header-link:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.header-link:active:not(:focus-visible) {
+  color: #A47312;
+}
+
 .header-list {
   justify-content: flex-start;
 }
@@ -162,6 +208,35 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
+  transition: color 0.3s ease-in-out;
+}
+
+.pers-acc-icon {
+  margin-right: 5px;
+  transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.pers-account:focus-visible {
+  outline: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.pers-account:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.pers-account:hover svg {
+  fill: #F0BF5F;
+}
+
+.pers-account:active:not(:focus-visible) {
+  color: #A47312;
+}
+
+.pers-account:active:not(:focus-visible) svg {
+  fill: #A47312;
 }
 
 .nav-btn {
@@ -173,6 +248,24 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
+  transition: background-color, border-color 0.3s ease-in-out;
+}
+
+.nav-btn:focus-visible {
+  outline: 0;
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.nav-btn:hover:not(:focus-visible) {
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.nav-btn:active:not(:focus-visible) {
+  background-color: #A47312;
+  border-color: #A47312;
+  color: #FFFFFF;
 }
 
 .pers-acc-icon {
@@ -210,6 +303,7 @@ body {
 }
 
 .special-offer-item {
+  position: relative;
   flex: 1;
   margin-bottom: 24px;
   padding: 40px;
@@ -217,10 +311,61 @@ body {
   background-position: center;
   background-size: cover;
   height: 258px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.special-offer-item svg {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .special-offer-item:last-child {
   margin-bottom: 0;
+}
+
+.special-offers-btn {
+  display: inline-flex;
+  align-items: center;
+  max-width: max-content;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F0BF5F;
+}
+
+.special-offers-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.special-offers-btn:focus-visible:before {
+  opacity: 1;
+}
+
+.special-offers-btn:focus-visible {
+  outline: 0;
+  /* outline: 1px solid #C93;
+  outline-offset: 8px; */
+}
+
+.special-offer-item:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 8px;
+}
+
+.special-offer-item:hover:not(:focus-visible) svg {
+  transform: translateX(5px);
+}
+
+.special-offer-item:active:not(:focus-visible) {
+  color: #FFF;
 }
 
 .special-offers-title {
@@ -248,28 +393,46 @@ body {
   font-size: 30px;
 }
 
-.special-offers-btn {
-  max-width: max-content;
-  font-weight: 400;
-  font-size: 16px;
-  color: #F0BF5F;
-}
 
-.special-offers-btn {
-  display: inline-flex;
-  align-items: center;
-}
-
-.more-details{
+.more-details {
+  display: block;
   margin-right: 5px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.more-details:active:not(:focus-visible) {
+  color: #FFF;
 }
 
 .special-offer-details {
   display: inline-flex;
   align-items: center;
+  max-width: max-content;
   font-weight: 400;
   font-size: 16px;
   color: #F0BF5F;
+  transition: transform 0.3s ease-in-out;
+}
+
+.special-offer-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.special-offer-details:focus-visible {
+  outline: 0;
+}
+
+.special-offer-details:focus-visible::before {
+  opacity: 1;
 }
 
 .item-right {
@@ -284,12 +447,12 @@ body {
 }
 
 .special-bg-image-01 {
-  background-image: url("../img/maldives.png");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url("../img/maldives.png");
   border-radius: 15px;
 }
 
 .special-bg-image-02 {
-  background-image: url("../img/crite.png");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url("../img/crite.png");
   border-radius: 15px;
 }
 
@@ -297,7 +460,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../img/luxe.png");
+  background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%), url("../img/luxe.png");
   border-radius: 15px;
 }
 
@@ -341,15 +504,69 @@ body {
   min-height: 330px;
   width: 573px;
   background-color: #FFFFFF;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.service-list-item:focus-visible {
+  outline: solid 1px #CC9933;
+  outline-offset: 8px;
+}
+
+.service-list-item svg path {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .service-btn {
   display: inline-flex;
   align-items: center;
+  max-width: max-content;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.service-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 8px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.service-btn:focus-visible {
+  outline: 0;
+}
+
+.service-btn:focus-visible::before {
+  opacity: 1;
+}
+
+.service-btn:hover:not(:focus-visible) svg path {
+  stroke: #F0BF5F;
+  transform: translateX(5px);
+}
+
+.service-btn:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.service-btn:active:not(:focus-visible) {
+  color: #A47312;
+}
+
+.service-btn:active:not(:focus-visible) svg path {
+  stroke: #A47312;
+}
+
+.service-more-details {
+  margin-right: 5px;
 }
 
 .service-list-item:nth-child(2n) {
@@ -560,31 +777,69 @@ body {
   border-radius: 10px;
   height: 42px;
   width: 100px;
+  transition: background-color, border-color 0.3s ease-in-out;
 }
+
+.rooms-btn:focus-visible {
+  outline: 0;
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.rooms-btn:hover:not(:focus-visible) {
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.rooms-btn:active:not(:focus-visible) {
+  background-color: #A47312;
+  border-color: #A47312;
+  color: #FFFFFF;
+}
+
 
 .location-options-btn {
   display: inline-flex;
   align-items: center;
 }
 
+.location-options-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .see-all-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: url("../img/location-09.jpg");
-    background-color: #CC9933;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 374px;
-    min-height: 440px;
-    padding: 27px;
-    margin-bottom: 22px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 200%;
-    color: #FFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img/location-09.jpg");
+  background-color: #CC9933;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 374px;
+  min-height: 440px;
+  padding: 27px;
+  margin-bottom: 22px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFF;
+  transition: transform 0.3s ease-in-out;
+}
+
+.see-all-btn svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.see-all-btn:hover:not(:focus-visible) svg {
+  transform: translateX(5px);
 }
 
 /* tour */
@@ -727,6 +982,22 @@ body {
   color: #C93;
   font-size: 16px;
   font-weight: 400;
+  transition: color, 0.3s ease-in-out;
+}
+
+.email:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.email:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.email:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .email-descr {
@@ -740,6 +1011,21 @@ body {
   color: #C93;
   font-size: 16px;
   font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+.tel:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+}
+
+.tel:hover:not(:focus-visible) {
+  color: var(--yellow-one);
+}
+
+.tel:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .contacts-image {
@@ -751,12 +1037,33 @@ body {
   display: flex;
   justify-content: center;
   height: 70px;
-  padding: 30px;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  padding-left: 30px;
   font-weight: 400;
   font-size: 16px;
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  transition: background-color, border-color 0.3s ease-in-out;
+}
+
+.get-direction:focus-visible {
+  outline: 0;
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.get-direction:hover:not(:focus-visible) {
+  background-color: #CC9933;
+  color: #FFFFFF;
+}
+
+.get-direction:active:not(:focus-visible) {
+  background-color: #A47312;
+  border-color: #A47312;
+  color: #FFFFFF;
 }
 
 /* footer */
@@ -808,6 +1115,23 @@ body {
   color: #C93;
   font-size: 16px;
   font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+.user-consent:focus-visible {
+  max-width: max-content;
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.user-consent:hover:not(:focus-visible) {
+  color: var(--yellow-one);
+}
+
+.user-consent:active:not(:focus-visible) {
+  color: var(--yellow-three);
 }
 
 .footer-tel-box {
@@ -821,6 +1145,23 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  max-width: max-content;
+  transition: 0.3s color ease-in-out;
+}
+
+.footer-tel:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.footer-tel:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.footer-tel:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .footer-email {
@@ -828,12 +1169,67 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  max-width: max-content;
+  transition: color, 0.3s ease-in-out;
+}
+
+.footer-email:focus-visible {
+  outline: 0;
+  outline: 1px solid #C93;
+  outline-offset: 5px;
+  color: #CC9933;
+}
+
+.footer-email:hover:not(:focus-visible) {
+  color: #F0BF5F;
+}
+
+.footer-email:active:not(:focus-visible) {
+  color: #A47312;
 }
 
 .social-media {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  outline: 0;
+  transition: fill 0.3s ease-in-out;
+}
+
+.tripadvisor:focus-visible svg path {
+  fill: var(--yellow-two)
+}
+
+.tripadvisor:hover:not(:focus-visible) svg path {
+  fill: var(--yellow-two)
+}
+
+.tripadvisor:active:not(:focus-visible) svg path {
+  fill: var(--yellow-three)
+}
+
+.vk:focus-visible svg path {
+  fill: var(--yellow-two)
+}
+
+.vk:hover:not(:focus-visible) svg path {
+  fill: var(--yellow-two)
+}
+
+.vk:active:not(:focus-visible) svg path {
+  fill: var(--yellow-three)
+}
+
+.odnoklassniki:focus-visible svg path {
+  fill: var(--yellow-two)
+}
+
+.odnoklassniki:hover:not(:focus-visible) svg path {
+  fill: var(--yellow-two)
+}
+
+.odnoklassniki:active:not(:focus-visible) svg path {
+  fill: var(--yellow-three)
 }
 
 .social-media:last-child {

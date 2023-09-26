@@ -68,7 +68,7 @@ img {
 }
 
 .container {
-  max-width: 1310px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
   margin-bottom: 50px;
@@ -117,10 +117,22 @@ img {
   background-color: var(--orange);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease-in-out;
-}
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
 
 .nav__item:hover:not(:focus-visible):after {
+  transform: scaleX(1);
+}
+
+.nav__item:active:not(:focus-visible) {
+  color: var(--orange-active);
+}
+
+.nav__item:active:not(:focus-visible)::after {
+  background-color: var(--orange-active);
+}
+
+.nav__item:hover:not(:focus-visible)::after {
   transform: scaleX(1);
 }
 
@@ -463,6 +475,22 @@ a.footer__logo {
 
 .footer__item {
   line-height: 36px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer__item:hover:not(:focus-visible) {
+  color: var(--orange-hover);
+}
+
+.footer__item:focus-visible {
+  color: var(--light-grey);
+  outline: 2px var(--orange) solid;
+  outline-offset: 5px;
+}
+
+.footer__item:active:not(:focus-visible) {
+  color: var(--orange-active);
 }
 
 .footer__social-media {
@@ -473,6 +501,11 @@ a.footer__logo {
 
 .footer__social-media:hover:not(:focus-visible) svg path {
   fill: #FF9900;
+}
+
+.footer__social-media:focus-visible {
+  outline: var(--orange);
+  outline-offset: 5px;
 }
 
 .footer__social-media:active:not(:focus-visible) svg path {
@@ -509,6 +542,16 @@ a.footer__logo {
   color: var(--light-grey);
 }
 
+.footer__surname:focus-visible {
+  background-color: var(--grey-hover);
+  color: var(--light-grey);
+}
+
+.footer__surname:active:not(:focus-visible) {
+  background-color: var(--grey-hover);
+  color: var(--white);
+}
+
 .footer__email {
   padding-left: 12px;
   max-width: 570px;
@@ -517,6 +560,22 @@ a.footer__logo {
   border: none;
   background-color: var(--grey);
   color: var(--light-grey);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer__email:hover:not(:focus-visible) {
+  background-color: var(--grey-hover);
+  color: var(--light-grey);
+}
+
+.footer__email:focus-visible {
+  background-color: var(--grey-hover);
+  color: var(--light-grey);
+}
+
+.footer__email:active:not(:focus-visible) {
+  background-color: var(--grey-hover);
+  color: var(--white);
 }
 
 .footer__message {
@@ -528,6 +587,22 @@ a.footer__logo {
   background-color: var(--grey);
   color: var(--light-grey);
   margin-bottom: 32px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer_message:hover:not(:focus-visible) {
+  background-color: var(--grey-hover);
+  color: var(--light-grey);
+}
+
+.footer__message:focus-visible {
+  background-color: var(--grey-hover);
+  color: var(--light-grey);
+}
+
+.footer__message:active:not(:focus-visible) {
+  background-color: var(--grey-hover);
+  color: var(--white);
 }
 
 .footer__user-consent {

@@ -68,9 +68,9 @@ img {
 }
 
 .container {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 15px;
+  max-width: 1920px;
+  margin: 0 75px;
+  padding: 0;
   margin-bottom: 50px;
 }
 
@@ -141,8 +141,16 @@ img {
   outline-offset: 5px;
 }
 
-.search {
+/* .search {
   transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+} */
+
+.search rect {
+  transition: fill 0.3s ease-in-out;
+}
+
+.search path {
+  transition: stroke 0.3s ease-in-out;
 }
 
 .search:hover rect {
@@ -202,6 +210,7 @@ img {
 .big-btn {
   width: 280px;
   height: 78px;
+  margin-right: 22px;
   font-size: 23px;
   font-weight: 700;
   color: var(--white);
@@ -449,7 +458,8 @@ border: 3px var(--orange) solid;
 
 .footer {
   background-color: var(--black);
-  padding: 50px 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer__content {
@@ -493,10 +503,14 @@ a.footer__logo {
   color: var(--orange-active);
 }
 
+
 .footer__social-media {
   width: 60px;
   height: 60px;
-  transition: color 0.3s ease-in-out;
+}
+
+.footer__social-media path {
+  transition: fill 0.3s ease-in-out;
 }
 
 .footer__social-media:hover:not(:focus-visible) svg path {
@@ -579,6 +593,7 @@ a.footer__logo {
 }
 
 .footer__message {
+  padding-top: 20px;
   padding-left: 12px;
   max-width: 570px;
   height: 60px;
@@ -608,6 +623,7 @@ a.footer__logo {
 .footer__user-consent {
   display: block;
   margin-bottom: 0.25em;
+  font-size: 16px;
   color: var(--white);
   cursor: pointer;
 }

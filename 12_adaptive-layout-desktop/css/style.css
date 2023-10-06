@@ -93,15 +93,19 @@ img {
   margin-right: auto;
 }
 
+.nav {
+  margin-right: 84px;
+}
+
 .nav__list {
   display: flex;
+  gap: 85px;
   font-size: 18px;
   font-weight: 600;
 }
 
 .nav__link {
   position: relative;
-  margin-right: 84px;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -151,7 +155,6 @@ outline-offset: 3px;
 
 .search:hover:not(:focus-visible) rect {
   fill: var(--orange-hover);
-  stroke: var(--orange-hover);
 }
 
 .search:hover:not(:focus-visible) path {
@@ -204,7 +207,7 @@ outline-offset: 3px;
 .general-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   font-size: 48px;
   font-weight: 400;
 }
@@ -215,7 +218,6 @@ outline-offset: 3px;
   margin-right: 22px;
   font-size: 23px;
   font-weight: 700;
-  /* outline: 0; */
   color: var(--white);
   border-radius: 16px;
   background: var(--orange);
@@ -278,6 +280,8 @@ outline-offset: 3px;
   margin-bottom: 32px;
   border: 1px var(--light-grey) solid;
   border-radius: 32px;
+  display: flex;
+  overflow: hidden;
 }
 
 .advantages__item:last-child {
@@ -291,6 +295,7 @@ outline-offset: 3px;
   border: 0;
   background-image: url(../img/advantages-one.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advantages__details {
@@ -345,6 +350,8 @@ border: 3px var(--orange) solid;
 }
 
 .right-item {
+  display: flex;
+  flex-direction: column;
   padding: 65px 115px 65px 300px;
 }
 
@@ -533,6 +540,7 @@ line-height: 32px;
 
 .footer__title {
   margin-top: 0;
+  /* margin-bottom: 20px; */
   color: var(--white);
 }
 
@@ -617,11 +625,15 @@ a.footer__logo {
 .footer__form-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
+/* .footer__title {
+  margin-bottom: 0px;
+} */
+
 .footer__surname {
-  padding-left: 12px;
+  padding-left: 25px;
   max-width: 570px;
   height: 60px;
   border-radius: 16px;
@@ -648,7 +660,7 @@ a.footer__logo {
 }
 
 .footer__email {
-  padding-left: 12px;
+  padding-left: 25px;
   max-width: 570px;
   height: 60px;
   border-radius: 16px;
@@ -675,8 +687,8 @@ a.footer__logo {
 }
 
 .footer__message {
-  padding-top: 20px;
-  padding-left: 12px;
+  padding-top: 18px;
+  padding-left: 25px;
   max-width: 570px;
   min-height: 150px;
   border-radius: 16px;

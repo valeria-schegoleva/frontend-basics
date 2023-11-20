@@ -47,6 +47,15 @@ img {
   font-family: "Montserrat";
   src: local("Montserrat-VariableFont_wght"),
   url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-VariableFont_wght"),
+  url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -77,9 +86,9 @@ img {
 }
 
 .container {
-  max-width: 1920px;
-  margin: 0 75px;
-  padding: 0;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
   margin-bottom: 50px;
 }
 
@@ -188,7 +197,7 @@ outline-offset: 3px;
 .hero__title {
   margin-top: 0;
   margin-bottom: 27px;
-  width: 837px;
+  max-width: 837px;
   font-size: 70px;
   font-weight: 800;
   line-height: normal;
@@ -313,7 +322,7 @@ outline-offset: 3px;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  min-height: 200px;
+  /* min-height: 200px; */
   border-radius: 32px;
   background-color: rgba(0, 0, 0, 0.50);
   color: var(--white);
@@ -503,14 +512,17 @@ line-height: 32px;
 
 .questions__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 20px;
 }
 
 .questions__item {
-  padding: 65px 65px 65px 60px;
+  flex: 1 1 calc((100% - 32px*2) / 3);
+  padding: 65px 65px 63px 60px;
   border: 1px var(--light-grey) solid;
   border-radius: 32px;
+  min-width: 400px;
 }
 
 .questions__title {
@@ -641,6 +653,8 @@ a.footer__logo {
   padding-left: 25px;
   max-width: 570px;
   height: 60px;
+  font-size: 14px;
+  font-weight: 400;
   border-radius: 16px;
   border: none;
   outline: 0;
@@ -750,7 +764,7 @@ a.footer__logo {
 
 .footer__check-box {
   position: absolute;
-  margin-left: -1.2em;
+  margin-left: -1.33em;
   width: 1em;
   height: 1em;
   background-image: url(../img/off.svg);

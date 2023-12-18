@@ -1,4 +1,4 @@
-@media (min-width: 320px) {
+/* @media (max-width: 320px) {
 
   .header__content {
     min-height: 118px;
@@ -99,10 +99,9 @@
     flex-direction: column;
   } */
 
-  .teacher__photo {
+  /* .teacher__photo {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    /* margin-bottom: 30px; */
   }
 
   .teachers__descr {
@@ -112,20 +111,14 @@
   .courses__title {
     font-size: 20px;
     font-weight: 700;
+  } */
+
+@media (max-width: 992px) {
+  .about__item {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
   }
-
 }
 
-@media (min-width: 576px) {
-
-
-}
-
-@media (min-width:768px) {
-
-}
-
-@media (min-width: 992px) {
-
-}
 

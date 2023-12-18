@@ -81,21 +81,19 @@ img {
   min-height: 80px;
   padding-left: 15px;
   padding-right: 15px;
-  align-content: center;
   justify-content: space-between;
-}
-
-.header__logo {
-  padding-top: 15px;
+  align-items: center;
 }
 
 .header__list {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
   gap: 56px;
 }
 
-.header__list__item {
+.header__item {
   font-size: 18px;
 }
 
@@ -141,13 +139,14 @@ background-color: var(--light-background);
 }
 
 .hero__content {
-  padding: 0;
+  /* padding: 0; */
   padding-left: 15px;
 }
 
 .main {
   display: flex;
   padding-top: 130px;
+  padding-bottom: 130px;
   min-height: 620px;
   color: var(--white);
   background-image: url(../img/hero-pic.png);
@@ -173,8 +172,8 @@ background-color: var(--light-background);
 }
 
 .hero__btn {
-  width: 270px;
-  height: 70px;
+  min-width: 270px;
+  padding: 24px 75px;
   font-size: 18px;
   background-color: var(--blue);
   color: var(--white);
@@ -196,8 +195,8 @@ background-color: var(--light-background);
 }
 
 .about__content {
-  padding: 0;
   padding-left: 205px;
+  margin-bottom: 30px;
   background-image: url(../img/about-model.png);
   background-repeat: no-repeat;
   background-position: left 2% bottom 50%;
@@ -221,15 +220,9 @@ background-color: var(--light-background);
 
 .about__list {
   display: flex;
-  gap: 36px;
+  margin: 0;
   padding: 0;
-  padding-top: 5px;
   min-height: 80px;
-}
-
-.about__points {
-  display: flex;
-  padding-left: 15px;
 }
 
 .about__descr {
@@ -240,14 +233,14 @@ background-color: var(--light-background);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
   font-size: 16px;
   font-weight: 700;
   color: var(--grey);
 }
 
-.about__item__descr {
+.about__text {
   max-width: 240px;
+  margin: 0;
 }
 
 .teachers {
@@ -257,6 +250,7 @@ background-color: var(--light-background);
 
 .teachers__content {
   padding-top: 73px;
+  margin-bottom: 80px;
   color: var(--white);
 }
 
@@ -282,7 +276,7 @@ background-color: var(--light-background);
   margin-bottom: 0;
 }
 
-.teacher__photo {
+.teachers__photo {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   margin-bottom: 30px;
@@ -324,8 +318,13 @@ background-color: var(--light-background);
   margin-top: 0;
 }
 
+.col-6 {
+  display: flex;
+}
+
 .courses__item {
   display: flex;
+  flex: 1;
   flex-direction: column;
   min-height: 480px;
   background-color: var(--light-background);
@@ -341,17 +340,35 @@ background-color: var(--light-background);
 
 .courses__item:hover:not(:focus-visible) {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  /* overflow: hidden; */
 }
 
 .courses__content__box {
   display: flex;
-  flex: 1;
   flex-direction: column;
+  align-items: flex-start;
+  min-height: 113px;
   padding: 30px;
 }
 
 .courses__img {
   display: flex;
+  position: relative;
+}
+
+.courses__img::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url('../img/mdi-access-time.svg') no-repeat center center;
+  background-size: cover;
+  color: var(--white);
+  top: 10px;
+  left: 425px;
+  bottom: 0;
 }
 
 .course__pic__item {
@@ -365,18 +382,18 @@ background-color: var(--light-background);
   margin-bottom: 12px;
 }
 
-.course__time {
+.courses__time {
   position: absolute;
-  display: flex;
-  align-content: center;
-  gap: 5px;
+  top: 13px;
+  left: 450px;
+  bottom: 0;
   color: var(--white);
-  top: 12px;
-  right: 5px;
 }
 
 .courses__descr {
-  margin: 0;
+  display: flex;
+  margin: 0 0 auto;
+  margin-bottom: 30px;
   color: var(--grey);
   line-height: 140%;
 }
@@ -449,7 +466,7 @@ background-color: var(--light-background);
   color: var(--dark-blue);
 }
 
-.corypright__icon {
+.page__icon {
   color: var(--blue);
 }
 

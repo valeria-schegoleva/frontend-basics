@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="icon" type="img/svg" href="img/favicon.svg">
 </head>
 
@@ -15,15 +16,15 @@
   <header class="header">
     <div class="container">
       <div class="row header__content">
-        <a href="#" class="header__logo">
-          <img src="/16_grid/img/skillbox-logo.svg" alt="Логотип Skillbox">
+        <a class="header__logo">
+          <img src="img/skillbox-logo.svg" alt="Логотип Skillbox">
         </a>
         <nav class="header__nav">
           <ul class="header__list list-reset">
-            <li class="header__list__item"><a class="header__link" href="#">Главная</a></li>
-            <li class="header__list__item"><a class="header__link" href="#">О нас</a></li>
-            <li class="header__list__item"><a class="header__link" href="#">Преподаватели</a></li>
-            <li class="header__list__item"><a class="header__link" href="#">Курсы</a></li>
+            <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+            <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+            <li class="header__item"><a class="header__link" href="#">Преподаватели</a></li>
+            <li class="header__item"><a class="header__link" href="#">Курсы</a></li>
           </ul>
         </nav>
       </div>
@@ -50,7 +51,7 @@
       <div class="row">
         <div class="about__content col-10">
           <h2 class="about__title">
-            Преимущества обучения в Skillbox
+            Преимущества обучения в skillbox
           </h2>
           <div class="about__descr">
             Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний, которые
@@ -60,15 +61,13 @@
       </div>
     </div>
       <div class="row">
-        <div class="col-12 about__points">
           <ul class="about__list list-reset">
-            <li class="col-4 about__item"><img class="about__icon" src="img/about-eye-circle.svg" alt="преимущество обучения"><p class="about__item__descr">Результат вашего обучения является самым важным для нас приоритетом</p></li>
-            <li class="col-4 about__item"><img class="about__icon" src="img/about-fingers.svg" alt="преимущество обучения"><p class="about__item__descr">Лично познакомитесь с одним из своих будущих преподавателей</p></li>
-            <li class="col-4 about__item"><img class="about__icon" src="img/about-speaker.svg" alt="преимущество обучения"><p class="about__item__descr">Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным</p></li>
+            <li class="col-4 about__item"><img class="about__icon" aria-hidden="true" src="img/about-eye-circle.svg" alt=""><p class="about__text">Результат вашего обучения является самым важным для нас приоритетом</p></li>
+            <li class="col-4 about__item"><img class="about__icon" aria-hidden="true" src="img/about-fingers.svg" alt=""><p class="about__text">Лично познакомитесь с одним из своих будущих преподавателей</p></li>
+            <li class="col-4 about__item"><img class="about__icon" aria-hidden="true" src="img/about-speaker.svg" alt=""><p class="about__text">Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным</p></li>
           </ul>
           </div>
       </div>
-    </div>
   </section>
   <section class="teachers">
     <div class="container teachers__content">
@@ -78,7 +77,7 @@
               <div class="teachers__item">
                 <picture>
                   <source srcset="img/teacher-1.jpg" media="(min-width: 800px)">
-                  <img class="teacher__photo" src="img/teacher-1.jpg" alt="Владимир Петров">
+                  <img class="teachers__photo" src="img/teacher-1.jpg" alt="Владимир Петров">
                 </picture>
                 <h3 class="teachers__subtitle">
                   Владимир Петров
@@ -93,7 +92,7 @@
               <div class="teachers__item">
                 <picture>
                 <source srcset="img/teacher-2.jpg" media="(min-width: 800px)">
-                <img class="teacher__photo" src="img/teacher-2.jpg" alt="Денис Сергеев">
+                <img class="teachers__photo" src="img/teacher-2.jpg" alt="Денис Сергеев">
               </picture>
               <h3 class="teachers__subtitle">
                 Денис Сергеев
@@ -107,7 +106,7 @@
               <div class="teachers__item">
                 <picture>
                 <source srcset="img/teacher-3.jpg" media="(min-width: 800px)">
-                <img class="teacher__photo" src="img/teacher-3.jpg" alt="Михаил Андреев">
+                <img class="teachers__photo" src="img/teacher-3.jpg" alt="Михаил Андреев">
               </picture>
               <h3 class="teachers__subtitle">
                 Михаил Андреев
@@ -121,7 +120,7 @@
               <div class="teachers__item">
                 <picture>
                   <source srcset="img/teacher-4.jpg" media="(min-width: 800px)">
-                  <img class="teacher__photo" src="img/teacher-4.jpg" alt="Константин Дмитриев">
+                  <img class="teachers__photo" src="img/teacher-4.jpg" alt="Константин Дмитриев">
                 </picture>
                 <h3 class="teachers__subtitle">
                   Константин Дмитриев
@@ -136,19 +135,19 @@
   </section>
   <section class="courses">
     <div class="container courses__content">
+      <h2 class="courses__title">Курсы</h2>
       <div class="row">
-        <h2 class="courses__title">Курсы</h2>
         <ul class="courses__list list-reset">
           <li class="col-6">
             <div class="courses__item">
               <div class="courses__img">
-                <picture class="course__pic">
+                <span class="courses__time">60 часов</span>
+                <picture class="courses__pic">
                   <source srcset="img/course-1.jpg" media="(min-width: 800px)">
                   <img src="img/course-1.jpg" alt="курс по Cinema 4d для начинающих">
                 </picture>
               </div>
               <div class="courses__content__box">
-                <span class="course__time"><img src="img/mdi-access-time.svg">60 часов</span>
                 <h3 class="courses__subtitle">
                   Cinema 4d для начинающих
                 </h3>
@@ -164,13 +163,13 @@
           <li class="col-6">
             <div class="courses__item">
               <div class="courses__img">
+                <span class="courses__time">40 часов</span>
                 <picture>
                 <source srcset="img/course-2.jpg" media="(min-width: 800px)">
                 <img src="img/course-2.jpg" alt="Blender: продвинутый уровень">
               </picture>
               </div>
               <div class="courses__content__box">
-                <span class="course__time"><img src="img/mdi-access-time.svg">40 часов</span>
                 <h3 class="courses__subtitle">
                   Blender: продвинутый уровень
                 </h3>
@@ -185,13 +184,13 @@
           <li class="col-6">
             <div class="courses__item">
               <div class="courses__img">
+                <span class="courses__time">40 часов</span>
                 <picture>
                 <source srcset="img/course-3.jpg" media="(min-width: 800px)">
                 <img src="img/course-3.jpg" alt="Визуализация в 3ds Max">
               </picture>
               </div>
               <div class="courses__content__box">
-                <span class="course__time"><img src="img/mdi-access-time.svg">40 часов</span>
                 <h3 class="courses__subtitle">
                   Визуализация в 3ds Max
                 </h3>
@@ -206,13 +205,13 @@
           <li class="col-6">
             <div class="courses__item">
               <div class="courses__img">
+                <span class="courses__time">80 часов</span>
                 <picture>
                 <source srcset="img/course-4.jpg" media="(min-width: 800px)">
                 <img src="img/course-4.jpg" alt="кВизуализация в 3ds Max">
               </picture>
               </div>
               <div class="courses__content__box">
-                <span class="course__time"><img src="img/mdi-access-time.svg">80 часов</span>
                 <h3 class="courses__subtitle">
                   Скульптинг в ZBrush
                 </h3>
@@ -232,13 +231,13 @@
 </body>
 <footer class="footer">
     <div class="footer__content">
-      <div class="footer__social">
-        <a href="" class="footer__link"><img src="../16_grid/img/footer-fb-icon.svg" alt="Facebook logo"></a>
-        <a href="" class="footer__link"><img src="../16_grid/img/footer-twitter-icon.svg" alt="Twitter logo"></a>
-        <a href="" class="footer__link"><img src="../16_grid/img/footer-instagram-icon.svg" alt="Instagram"></a>
-        <a href="" class="footer__link"><img src="../16_grid/img/footer-youtube-icon.svg" alt="YouTube"></a>
-      </div>
-      <div class="page__copyright">SKILLBOX <span class="corypright__icon">®</span> 2023</div>
+      <ul class="footer__social list-reset">
+        <li> <a href="https://www.facebook.com" target="_blank" class="footer__link"><img src="img/footer-fb-icon.svg" alt="Facebook logo"></a></li>
+        <li> <a href="https://www.twitter.com" target="_blank" class="footer__link"><img src="img/footer-twitter-icon.svg" alt="Twitter logo"></a></li>
+        <li> <a href="https://www.instagram.com" target="_blank" class="footer__link"><img src="img/footer-instagram-icon.svg" alt="Instagram"></a></li>
+        <li> <a href="https://www.youtube.com" target="_blank" class="footer__link"><img src="img/footer-youtube-icon.svg" alt="YouTube"></a></li>
+      </ul>
+      <div class="page__copyright">SKILLBOX <span class="page__icon">®</span> 2023</div>
     </div>
 </footer>
 

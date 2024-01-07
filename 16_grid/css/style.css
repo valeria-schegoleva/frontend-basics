@@ -14,7 +14,7 @@ a {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 }
 
 :root {
@@ -136,10 +136,10 @@ background-color: var(--light-background);
 .hero {
   margin-bottom: 80px;
   background-color: var(--dark-bg);
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
 
 .hero__content {
-  /* padding: 0; */
   padding-left: 15px;
 }
 
@@ -362,10 +362,10 @@ background-color: var(--light-background);
   flex: 1;
 }
 
-.courses__img {
+/* .courses__img {
   display: flex;
   position: relative;
-}
+} */
 
 .courses__img::before {
   content: '';

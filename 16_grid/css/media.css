@@ -3,9 +3,15 @@
 
   .main {
     background-image: url(../img/hero-pic-768.png);
+    background-repeat: no-repeat;
     background-size: 320px 350px;
     background-position: right 5% bottom 56%;
   }
+
+  .hero {
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #2E2B44 100%);
+  }
+
   .hero__title {
   margin-bottom: 15px;
   font-size: 50px;
@@ -107,6 +113,17 @@
     align-items: center;
   }
 
+  .header__list {
+    gap: 56px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+
+  .hero {
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #2E2B44 100%);
+  }
+
   .hero__title {
     font-size: 50px;
     font-weight: 700;
@@ -118,6 +135,7 @@
     padding-bottom: 0;
     min-height: 567px;
     background-image: none;
+
   }
 
   .about {
@@ -137,5 +155,89 @@
   .teachers__content {
     padding-bottom: 49px;
   }
+
+  .courses__item {
+    min-height: 617px;
+    margin-bottom: 30px;
+  }
+
+  .courses__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 115%;
+    margin-bottom: 10px;
+  }
+
+  .courses__descr{
+    margin-bottom: 33px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .courses__btn {
+    padding: 21px 48px;
+    border-radius: 20px;
+  }
 }
+
+@media (max-width: 575px) {
+
+  .hero {
+    height: 413px;
+  }
+
+  .hero__title {
+  max-width: 226px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 15px;
+  }
+
+  .hero__descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-bottom: 50px;
+  }
+
+  .about__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 130%;
+  }
+
+  .about__descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  }
+
+  .about__content {
+    padding-left: 15px;
+    background-image: none;
+  }
+
+  .about__list {
+    flex-direction: column;
+  }
+
+  .about__item {
+    flex-direction: row;
+  }
+
+  .teachers__photo {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+  }
+
+  .teachers__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+}
+
 

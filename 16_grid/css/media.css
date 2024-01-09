@@ -148,6 +148,12 @@
     background-position: left 4% bottom 100%;
   }
 
+  .about__icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 8px;
+  }
+
   .teachers__item {
     margin-bottom: 23px;
   }
@@ -183,8 +189,28 @@
 
 @media (max-width: 575px) {
 
+  .header {
+    height: 118px;
+  }
+
+  .header__content {
+    height: 120px;
+    padding-left: 20px;
+  }
+
+  .header__link {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
   .hero {
-    height: 413px;
+    max-height: 352px;
+    margin-bottom: 50px;
+  }
+
+  .main {
+    min-height: 353px;
+    padding-top: 50px;
   }
 
   .hero__title {
@@ -192,17 +218,29 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   }
 
   .hero__descr {
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+  }
+
+  .hero__btn {
+    min-width: 213px;
+    padding: 21px 50px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .about {
+    margin-bottom: 45px;
   }
 
   .about__title {
+  margin-bottom: 3px;
   font-size: 20px;
   font-weight: 700;
   line-height: 130%;
@@ -212,6 +250,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  }
+
+  .about__list {
+    gap: 20px;
   }
 
   .about__content {
@@ -227,17 +269,59 @@
     flex-direction: row;
   }
 
+  .teachers__content {
+    padding-top: 47px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
   .teachers__photo {
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
   }
 
   .teachers__title {
+    margin-bottom: 27px;
     font-size: 20px;
     font-weight: 700;
     line-height: 100%;
   }
 
+  .teachers__subtitle {
+    margin-bottom: 5px;
+  }
+
+  .teachers__descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .courses__list {
+    gap: 23px;
+  }
+  .courses__content {
+    padding-top: 45px;
+  }
+
+  .courses__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .courses__subtitle {
+    line-height: 130%;
+  }
+
+  .courses__descr {
+    margin-bottom: 80px;
+  }
+
+  .courses__btn {
+    padding: 22px 55px;
+  }
 }
 
 

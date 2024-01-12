@@ -78,7 +78,6 @@ img {
 }
 
 .header__content {
-  overflow-y: hidden;
   color: var(--white);
 }
 
@@ -367,12 +366,7 @@ background-color: var(--light-background);
   flex: 1;
 }
 
-/* .courses__img {
-  display: flex;
-  position: relative;
-} */
-
-.courses__img::before {
+.courses__item::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -382,7 +376,7 @@ background-color: var(--light-background);
   background-size: cover;
   color: var(--white);
   top: 10px;
-  left: 440px;
+  right: 80px;
   bottom: 0;
 }
 
@@ -403,7 +397,7 @@ background-color: var(--light-background);
 .courses__time {
   position: absolute;
   top: 13px;
-  left: 470px;
+  right: 10px;
   bottom: 0;
   color: var(--white);
 }

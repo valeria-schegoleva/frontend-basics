@@ -192,6 +192,17 @@
   .header {
     height: 118px;
   }
+  
+  .header__nav{
+    width: 100%;
+    scrollbar-width: none;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .header__nav::-webkit-scrollbar{
+    display: none;
+  }
 
   .header__content {
     height: 120px;
@@ -298,9 +309,18 @@
     line-height: 150%;
   }
 
-  .courses__list {
-    gap: 23px;
+  .courses {
+    margin-bottom: 0;
   }
+
+  .courses__list {
+    margin-bottom: 13px;
+  }
+
+  .courses__item {
+    min-height: 653px;
+  }
+
   .courses__content {
     padding-top: 45px;
   }

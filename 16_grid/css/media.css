@@ -226,6 +226,7 @@
   .header__content {
     height: 120px;
     padding-left: 15px;
+    padding-right: 15px;
     padding-top: 25px;
   }
 
@@ -267,7 +268,7 @@
   }
 
   .about {
-    margin-bottom: 45px;
+    margin-bottom: 53px;
   }
 
   .about__title {
@@ -306,14 +307,18 @@
 
   .teachers__content {
     padding-top: 47px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
     font-size: 20px;
     font-weight: 700;
   }
 
   .teachers__photo {
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .teachers__item {
+    margin-bottom: 25px;
   }
 
   .teachers__title {
@@ -334,6 +339,9 @@
   }
 
   .courses {
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 0;
   }
 
@@ -345,8 +353,8 @@
     min-height: 653px;
   }
 
-  .courses__content {
-    padding-top: 45px;
+  .courses__time {
+    right: 10px;
   }
 
   .courses__title {
@@ -356,6 +364,7 @@
   }
 
   .courses__subtitle {
+    margin-bottom: 6px;
     line-height: 130%;
   }
 

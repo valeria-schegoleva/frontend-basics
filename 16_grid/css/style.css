@@ -155,8 +155,8 @@ background-color: var(--light-background);
   color: var(--white);
   background-image: url(../img/hero-pic.png);
   background-repeat: no-repeat;
-  background-position: right 3% bottom 50%;
-  background-size: 640px 585px;
+  background-position: right 5% bottom 60%;
+  background-size: 620px 600px;
 }
 
 .hero__title {
@@ -172,7 +172,7 @@ background-color: var(--light-background);
   margin-bottom: 66px;
   font-size: 18px;
   line-height: 140%;
-  max-width: 354px;
+  max-width: 440px;
 }
 
 .hero__btn {
@@ -195,11 +195,12 @@ background-color: var(--light-background);
 }
 
 .hero__btn:active:not(:focus-visible) {
-  background-color: var(--black);
+  background-color: var(--blue);
+  /* color: var(--white); */
 }
 
 .about {
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .about__content {
@@ -258,11 +259,12 @@ background-color: var(--light-background);
 
 .teachers {
   background-color: var(--dark-bg);
+  /* padding-bottom: 80px; */
 }
 
 .teachers__content {
-  padding-top: 73px;
-  margin-bottom: 80px;
+  padding-top: 71px;
+  padding-bottom: 73px;
   color: var(--white);
 }
 
@@ -291,7 +293,7 @@ background-color: var(--light-background);
 .teachers__photo {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .teachers__subtitle {
@@ -300,14 +302,14 @@ background-color: var(--light-background);
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 140%;
 }
 
 .teachers__descr {
   padding: 0;
   margin: 0;
   color: var(--grey-text);
-  line-height: 140%;
+  line-height: 150%;
 }
 
 .courses {
@@ -384,7 +386,7 @@ background-color: var(--light-background);
   background-size: cover;
   color: var(--white);
   top: -3px;
-  right: 70px;
+  left: -28px;
   bottom: 0;
 }
 
@@ -482,7 +484,7 @@ background-color: var(--light-background);
 }
 
 .footer__link:active:not(:focus-visible) svg path {
-  fill: var(--blue);
+  fill: var(--white);
 }
 
 .footer__link:focus-visible:not(:hover) {

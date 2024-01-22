@@ -35,7 +35,7 @@
 
   .teachers__content {
     margin-bottom: 0;
-    padding-bottom: 80px;
+    
   }
 
   .teachers__item {
@@ -289,7 +289,7 @@
   }
 
   .about__list {
-    gap: 28px;
+    gap: 30px;
   }
 
   .about__content {

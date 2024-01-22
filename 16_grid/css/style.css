@@ -156,7 +156,7 @@ background-color: var(--light-background);
   background-image: url(../img/hero-pic.png);
   background-repeat: no-repeat;
   background-position: right 5% bottom 60%;
-  background-size: 620px 600px;
+  background-size: 610px 580px;
 }
 
 .hero__title {
@@ -264,7 +264,7 @@ background-color: var(--light-background);
 
 .teachers__content {
   padding-top: 71px;
-  padding-bottom: 73px;
+  padding-bottom: 76px;
   color: var(--white);
 }
 
@@ -293,16 +293,16 @@ background-color: var(--light-background);
 .teachers__photo {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
 }
 
 .teachers__subtitle {
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 700;
-  line-height: 140%;
+  line-height: 120%;
 }
 
 .teachers__descr {
@@ -313,7 +313,7 @@ background-color: var(--light-background);
 }
 
 .courses {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .courses__content {
@@ -372,7 +372,7 @@ background-color: var(--light-background);
   align-items: flex-start;
   min-height: 113px;
   padding: 30px;
-  padding-top: 27px;
+  padding-top: 26px;
   flex: 1;
 }
 
@@ -386,7 +386,7 @@ background-color: var(--light-background);
   background-size: cover;
   color: var(--white);
   top: -3px;
-  left: -28px;
+  left: -4px;
   bottom: 0;
 }
 
@@ -407,8 +407,9 @@ background-color: var(--light-background);
 .courses__time {
   position: absolute;
   top: 13px;
-  right: 27px;
+  right: 3px;
   bottom: 0;
+  padding-left: 25px;
   color: var(--white);
 }
 
@@ -421,7 +422,7 @@ background-color: var(--light-background);
 }
 
 .courses__btn {
-  padding: 20.5px 59px;
+  padding: 21.5px 59px;
   margin-top: auto;
   max-width: 202px;
   background-color: var(--blue);

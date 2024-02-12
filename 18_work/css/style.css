@@ -18,21 +18,48 @@ img {
 }
 
 .page {
-  font-family: 'Muller', sans-serif;
-  font-weight: 400;
-  /* min-width: 320px; */
+    font-family: 'Muller', sans-serif;
+    font-weight: 400;
+    min-width: 320px;
 }
 
-/* :root {
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 50px;
+ }
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+:root {
+  --black: #121723;
+  --dark-grey: #292E39;
+  --grey: #A1A6B4;
+  --light-grey: #D2D5DD;
+  --light-basic: #E1670E;
+  --mustard: #BB973E;
+  --beige: #F0D288;
+  --blue: #0039A6;
+  --red: #D52B1E;
+  --purple: #4F28A5;
+  --lavander: #6D31EE;
+  --light-purple: #AA9DFA;
+  --ivory: #F5F6F7;
   --white: #fff;
-  --black: #000;
-  --orange: #F90;
-  --orange-hover: #FFB84D;
-  --orange-active: #E1670E;
-  --grey: #414141;
-  --grey-hover: #666;
-  --light-grey: #CACACA;
-} */
+}
 
 @font-face {
   font-family: "Muller";
@@ -68,4 +95,21 @@ img {
   font-weight: 200;
   font-style: normal;
   font-display: swap;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/microphone.png);
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.hero__btn {
+    color: var(--ivory);
+    background-color: var(--lavander);
+    border-radius: 40px;
+    padding: 25px 54px;
+    width: 249px;
+    height: 77px;
 }

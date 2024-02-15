@@ -264,6 +264,10 @@ img {
   outline: 1px solid var(--gray-outline);
 }
 
+.shows__card button.shows__details {
+  margin-right: auto;
+}
+
 .shows__01 {
   background-image: url(../img/broadcast_pic1.jpg);
   background-repeat: no-repeat;
@@ -308,25 +312,32 @@ img {
   color: var(--grey);
 }
 
-/* .shows__archive {
+.shows__archive {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-} */
+  background-image: url(../img/microphone.png);
+  background-repeat: no-repeat;
+  background-size: 85px 89px;
+  background-position: 0 70%;
+}
 
 .shows__details {
+  margin-bottom: 20px;
   font-size: 16px;
   font-style: italic;
 }
 
 .shows__btn {
+  max-width: 200px;
   padding: 12px 56px;
   margin-top: auto;
+  margin-bottom: 15px;
   outline: 2px solid var(--black);
   border-radius: 77px;
 }
 
 .shows__text {
+  margin-top: 0;
   font-size: 16px;
   color: var(--grey);
 }
@@ -347,9 +358,30 @@ img {
   color: var(--white);
 }
 
-.guests__text {
+.guests__textbold {
   margin-top: 0;
+  font-weight: 300;
   color: var(--grey);
+}
+
+.guests__textnormal {
+  margin-top: 0;
+  /* margin-bottom: 50px; */
+  color: var(--grey);
+}
+
+.guests__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.guests__card {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  padding-left: 460px;
+  min-height: 272px;
 }
 
 .guests__name {
@@ -387,8 +419,120 @@ img {
   background-repeat: no-repeat;
 }
 
+.playlists__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
 .playlists__title {
   margin-top: 0;
   font-size: 48px;
   font-weight: 200;
+}
+
+.playlists__item {
+  padding-top: 160px;
+  width: calc((100% - var(--gap)*3)/4);
+}
+
+.playlists__name {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+.playlists__descr {
+  margin-top: 0;
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.playlist_1 {
+  background-image: url(../img/playlist1.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_2 {
+  background-image: url(../img/playlist2.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_3 {
+  background-image: url(../img/playlist3.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_4 {
+  background-image: url(../img/playlist4.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_5 {
+  background-image: url(../img/playlist5.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_6 {
+  background-image: url(../img/playlist6.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_7 {
+  background-image: url(../img/playlist7.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_8 {
+  background-image: url(../img/playlist8.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_9 {
+  background-image: url(../img/playlist9.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_10 {
+  background-image: url(../img/playlist10.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_11 {
+  background-image: url(../img/playlist11.jpg);
+  background-repeat: no-repeat;
+}
+
+
+.playlist_12 {
+  background-image: url(../img/playlist12.jpg);
+  background-repeat: no-repeat;
+}
+
+.promo {
+  background-color: var(--dark-grey);
+}
+
+.promo__content {
+  background-image: url(../img/radio.png);
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-size: 48px;
+  font-weight: 200;
+  color: var(--beige);
+}
+
+.promo__text {
+  font-size: 16px;
+  color: var(--white);
 }

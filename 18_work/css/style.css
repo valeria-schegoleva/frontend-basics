@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1110px;
     margin: 0 auto;
     padding: 0 15px;
     margin-bottom: 50px;
@@ -258,9 +258,10 @@ img {
 .shows__card {
   display: flex;
   flex-direction: column;
-  padding-top: 148px;
+  padding-top: 168px;
   padding-left: 16px;
-  width: calc((100% - var(--gap)*2)/4);
+  padding-bottom: 20px;
+  width: calc((100% - var(--gap)*3)/3);
   outline: 1px solid var(--gray-outline);
 }
 
@@ -299,6 +300,7 @@ img {
 }
 
 .shows__name {
+  margin-top: 0;
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 300;
@@ -322,7 +324,6 @@ img {
 }
 
 .shows__details {
-  margin-bottom: 20px;
   font-size: 16px;
   font-style: italic;
 }
@@ -353,20 +354,25 @@ img {
 
 .guests__title {
   margin-top: 0;
+  margin-bottom: 12px;
   font-size: 48px;
   font-weight: 200;
   color: var(--white);
 }
 
 .guests__textbold {
+  display: inline-block;
   margin-top: 0;
+  margin-bottom: 5px;
   font-weight: 300;
   color: var(--grey);
 }
 
 .guests__textnormal {
+  display: inline-block;
+  max-width: 825px;
   margin-top: 0;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
   color: var(--grey);
 }
 
@@ -391,7 +397,9 @@ img {
 }
 
 .guests__descr {
+  max-width: 458px;
   margin-top: 0;
+  margin-bottom: 88px;
   font-size: 16px;
   color: var(--grey);
 }
@@ -419,6 +427,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.playlists__content {
+  display: flex;
+}
+
 .playlists__list {
   display: flex;
   flex-wrap: wrap;
@@ -430,9 +442,29 @@ img {
   font-weight: 200;
 }
 
+.playlists__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlists__text {
+  margin-top: 0;
+  /* max-width: 350px; */
+  font-size: 16px;
+  color: var(--grey);
+}
+
 .playlists__item {
-  padding-top: 160px;
+  padding-top: 161px;
   width: calc((100% - var(--gap)*3)/4);
+}
+
+.item__content {
+  max-width: 160px;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  outline: 1px solid var(--gray-outline);
 }
 
 .playlists__name {
@@ -442,6 +474,7 @@ img {
 
 .playlists__descr {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 12px;
   color: var(--grey);
 }
@@ -451,18 +484,15 @@ img {
   background-repeat: no-repeat;
 }
 
-
 .playlist_2 {
   background-image: url(../img/playlist2.jpg);
   background-repeat: no-repeat;
 }
 
-
 .playlist_3 {
   background-image: url(../img/playlist3.jpg);
   background-repeat: no-repeat;
 }
-
 
 .playlist_4 {
   background-image: url(../img/playlist4.jpg);
@@ -522,17 +552,101 @@ img {
 }
 
 .promo__content {
-  background-image: url(../img/radio.png);
+  display: flex;
+  flex-direction: column;
+  padding-top: 95px;
+  padding-bottom: 133px;
+  width: 50%;
   background-repeat: no-repeat;
 }
 
+.promo__pic {
+  display: flex;
+  /* background-image: url(../img/radio.png); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* .pic__item {
+  size: 100%;
+} */
+
 .promo__title {
+  margin-top: 0;
   font-size: 48px;
   font-weight: 200;
   color: var(--beige);
 }
 
 .promo__text {
+  margin-top: 0;
   font-size: 16px;
   color: var(--white);
+}
+
+.promo__price {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: var(--white);
+}
+
+.promo__btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 25px 40px;
+  max-width: 300px;
+  border-radius: 100px;
+  outline: 2px solid var(--beige);
+}
+
+.btn__text {
+  font-size: 20px;
+  color: var(--beige);
+}
+
+.about {
+  background-color: var(--black);
+}
+
+.about__title {
+  font-size: 48px;
+  font-weight: 200;
+  color: var(--white);
+}
+
+.about__textbold {
+  margin-top: 0;
+  font-weight: 300;
+  color: var(--grey);
+}
+  
+.about__textnormal {
+  margin-top: 0;
+  color: var(--grey);
+}
+
+.about__list {
+  display: flex;
+  gap: var(--gap);
+}
+
+.about__01 {
+  background-image: url(../img/about1.jpg);
+  background-repeat: no-repeat;
+}
+
+.about__02 {
+  background-image: url(../img/about2.jpg);
+  background-repeat: no-repeat;
+}
+
+.about__03 {
+  background-image: url(../img/about3.jpg);
+  background-repeat: no-repeat;
+}
+
+.about__04 {
+  background-image: url(../img/about4.jpg);
+  background-repeat: no-repeat;
 }

@@ -609,26 +609,61 @@ img {
   background-color: var(--black);
 }
 
+.about__content {
+  padding-top: 94px;
+}
+
 .about__title {
   font-size: 48px;
   font-weight: 200;
   color: var(--white);
 }
 
+.about__text {
+  max-width: 634px;
+  margin-bottom: 30px;
+}
+
 .about__textbold {
+  display: flex;
   margin-top: 0;
   font-weight: 300;
+  line-height: 160%;
   color: var(--grey);
 }
   
 .about__textnormal {
+  display: flex;
   margin-top: 0;
+  line-height: 160%;
   color: var(--grey);
 }
 
 .about__list {
   display: flex;
   gap: var(--gap);
+  margin-bottom: 30px;
+}
+
+.about__item {
+  display: flex;
+  min-height: 255px;
+  width: calc(100% - (var(--gap * 3)/4));
+}
+
+.about__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__name {
+  margin-top: 0;
+}
+
+.about__descr {
+  margin-top: 0;
+  font-size: 16px;
+  color: var(--grey);
 }
 
 .about__01 {

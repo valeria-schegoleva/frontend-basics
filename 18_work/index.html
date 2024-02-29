@@ -13,36 +13,38 @@
 
 <body class="page">
   <header class="header">
-    <div class="container header__container">
-      <a href="#" class="header__logo">
-        <img src="img/header_logo.svg" alt="логотип W Vawe Radio">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__list list-reset">
-          <li class="header__link">Подкасты</li>
-          <li class="header__link">Передачи</li>
-          <li class="header__link">Гости</li>
-          <li class="header__link">Плейлисты</li>
-          <li class="header__link">О нас</li>
-        </ul>
-      </nav>
-      <button aria-label="Кнопка поиска" class="header__search btn-reset">
-        <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-            stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
+    <div class="container">
+      <div class="header__content">
+        <a href="#" class="header__logo">
+          <img src="img/header_logo.svg" alt="логотип W Vawe Radio">
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list list-reset">
+            <li class="header__link">Подкасты</li>
+            <li class="header__link">Передачи</li>
+            <li class="header__link">Гости</li>
+            <li class="header__link">Плейлисты</li>
+            <li class="header__link">О нас</li>
+          </ul>
+        </nav>
+        <button aria-label="Кнопка поиска" class="header__search btn-reset">
+          <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>  
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="container">
         <div class="hero__content">
-          <h1 class="hero__title">Radio W-Wawe</h1>
+          <h1 class="hero__title">Радио <span class="hero__italic">W-Wawe</span> </h1>
           <p class="hero__descr">Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя
             в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо
             прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)</p>
@@ -55,35 +57,51 @@
         <div class="podcasts__content">
           <h2 class="podcasts__title">Подкасты</h2>
           <ul class="podcasts__list list-reset">
-            <li class="podcasts__card podcasts_01"><time class="podcasts__time">15:43</time>
+            <li class="podcasts__card podcasts_01">
+              <span class="podcasts__date">14 июня</span>
+              <time class="podcasts__time">15:43</time>
               <h3 class="podcasts__subtitle">Европа. XIX век</h3>
               <p class="podcasts__speaker">Дмитрий Гутенберг</p>
             </li>
-            <li class="podcasts__card podcasts_02"><time class="podcasts__time">5:32</time>
+            <li class="podcasts__card podcasts_02">
+              <span class="podcasts__date">11 июня</span>
+              <time class="podcasts__time">5:32</time>
               <h3 class="podcasts__subtitle">О музыке</h3>
               <p class="podcasts__speaker">Дмитрий Гутенберг</p>
             </li>
-            <li class="podcasts__card podcasts_03"><time class="podcasts__time">8:54</time>
+            <li class="podcasts__card podcasts_03">
+              <span class="podcasts__date">8 июня</span>
+              <time class="podcasts__time">8:54</time>
               <h3 class="podcasts__subtitle">Люди сегодня</h3>
               <p class="podcasts__speaker">Анна Васильева</p>
             </li>
-            <li class="podcasts__card podcasts_04"><time class="podcasts__time">9:04</time>
+            <li class="podcasts__card podcasts_04">
+              <span class="podcasts__date">5 июня</span>
+              <time class="podcasts__time">9:04</time>
               <h3 class="podcasts__subtitle">Хелоу, Африка!</h3>
               <p class="podcasts__speaker">Пётр Дмитриевский</p>
             </li>
-            <li class="podcasts__card podcasts_05"><time class="podcasts__time">7:03</time>
+            <li class="podcasts__card podcasts_05">
+              <span class="podcasts__date">2 июня</span>
+              <time class="podcasts__time">7:03</time>
               <h3 class="podcasts__subtitle">Обо всем</h3>
               <p class="podcasts__speaker">Пётр Дмитриевский</p>
             </li>
-            <li class="podcasts__card podcasts_06"><time class="podcasts__time">9:15</time>
+            <li class="podcasts__card podcasts_06">
+              <span class="podcasts__date">28 мая</span>
+              <time class="podcasts__time">9:15</time>
               <h3 class="podcasts__subtitle">Физика цвета</h3>
               <p class="podcasts__speaker">Татьяна Флеганова</p>
             </li>
-            <li class="podcasts__card podcasts_07"><time class="podcasts__time">16:04</time>
+            <li class="podcasts__card podcasts_07">
+              <span class="podcasts__date">22 мая</span>
+              <time class="podcasts__time">16:04</time>
               <h3 class="podcasts__subtitle">Источник звука</h3>
               <p class="podcasts__speaker">Пётр Дмитриевский</p>
             </li>
-            <li class="podcasts__card podcasts_08"><time class="podcasts__time">6:55</time>
+            <li class="podcasts__card podcasts_08">
+              <span class="podcasts__date">18 мая</span>
+              <time class="podcasts__time">6:55</time>
               <h3 class="podcasts__subtitle">Правила этикета</h3>
               <p class="podcasts__speaker">Татьяна Флеганова</p>
             </li>

@@ -1,0 +1,265 @@
+@media (max-width: 1200px) {
+
+    .container {
+        max-width: 823px;
+    }
+
+    .header__content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 144px;
+    }
+
+    .header__logo {
+        order: -1;
+        margin-right: auto;
+    }
+
+    .header__nav {
+        order: 2;
+        width: 100%;
+    }
+
+    .header__list {
+        gap: 105px;
+    }
+
+    .hero__descr {
+        max-width: 540px;
+    }
+
+    .shows__card {
+        width: 254px;
+    }
+
+    .playlists__content {
+        flex-direction: column;
+    }
+
+    .playlists__item {
+        display: flex;
+        max-height: 112px;
+        width: calc((100% - var(--gap)* 2) / 3);
+    }
+
+    .playlists__photo {
+        width: 112px;
+        height: 112px;
+    }
+
+    .item__content {
+        max-height: 112px;
+        min-width: 143px;
+        padding: 40px 8px;
+        border-top: 1px solid #E6E8EC;
+    }
+
+    .playlist_1 {
+        max-height: 112px;
+    }
+
+    .playlist_1::before {
+        left: 0;
+    }  
+    
+    .playlist_2 {
+        max-height: 112px;
+    }
+
+    .playlist_2::before {
+        left: 0;
+    }    
+    
+    .playlist_3 {
+        max-height: 112px;
+    }
+
+    .playlist_3::before {
+        left: 0;
+    }    
+    
+    .playlist_4 {
+        max-height: 112px;
+    }
+
+    .playlist_4::before {
+        left: 0;
+    }    
+    
+    .playlist_5 {
+        max-height: 112px;
+    }
+
+    .playlist_5::before {
+        left: 0;
+    }    
+    
+    .playlist_6 {
+        max-height: 112px;
+    }
+
+    .playlist_6::before {
+        left: 0;
+    }    
+    
+    .playlist_7 {
+        max-height: 112px;
+    }
+
+    .playlist_7::before {
+        left: 0;
+    }    
+    
+    .playlist_8 {
+        max-height: 112px;
+    }
+
+    .playlist_8::before {
+        left: 0;
+    }    
+    
+    .playlist_9 {
+        max-height: 112px;
+    }
+
+    .playlist_9::before {
+        left: 0;
+    }    
+    
+    .playlist_10 {
+        max-height: 112px;
+    }
+
+    .playlist_10::before {
+        left: 0;
+    }    
+    
+    .playlist_11 {
+        max-height: 112px;
+    }
+
+    .playlist_11::before {
+        left: 0;
+    }    
+    .playlist_12 {
+        max-height: 112px;
+    }
+
+    .playlist_12::before {
+        left: 0;
+    }
+
+    .promo__pic {
+        align-items: center;
+    }
+
+    .promo__pic::before {
+        background-image: url(../img/label_new_tablet.svg);
+        width: 100px;
+        height: 100px;
+        top: 100px
+    }
+
+    .promo__content {
+        min-width: 441px;
+    }
+
+    .about__swirl {
+        display: none;
+    }
+
+    .about__list {
+        flex-wrap: wrap;
+    }
+
+    .about__item {
+        width: calc((100% - 30px)/2);
+    }
+
+    .about__box {
+        max-width: none;
+    }
+
+    .about__name {
+        padding-top: 30px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 540px;
+    }
+
+    .header__list {
+        gap: 48px;
+    }
+
+    .header__link {
+        font-size: 16px;
+    }
+
+    .hero__content {
+        background-image: none;
+    }
+
+    .podcasts__card {
+        width: 100%;
+    }
+
+    .shows__content {
+        flex-direction: column;
+    }
+
+    .shows__archive {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    }
+
+    .shows__title {
+    display: flex;
+    order: -2; 
+    }
+
+    .shows__btn {
+    display: flex;
+    order: 3; 
+    }
+
+    .shows__text {
+    display: flex;
+    order: 4;
+    background-image: url(../img/mic_small.png);
+    background-repeat: no-repeat;
+    background-position: left center; /* Position the background image to the left and center vertically */
+    /* padding-left: 130px; */
+    }
+
+    .shows__list {
+    order: 0;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    }
+
+    .about__wrap {
+        flex-direction: column;
+    }
+
+    .guests__card {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .guests__list {
+        gap: 350px;
+    }
+
+ 
+
+
+}

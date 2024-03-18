@@ -210,14 +210,17 @@
     }
 
     .shows__content {
-        flex-direction: column;
+    flex-direction: column;
+    background-image: url(../img/mic_small.png);
+    background-repeat: no-repeat;
+    background-position: left bottom; 
     }
 
     .shows__archive {
     display: flex;
     flex-direction: column;
     background-image: none;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
     text-align: center;
     }
 
@@ -234,10 +237,21 @@
     .shows__text {
     display: flex;
     order: 4;
-    background-image: url(../img/mic_small.png);
-    background-repeat: no-repeat;
-    background-position: left center; /* Position the background image to the left and center vertically */
-    /* padding-left: 130px; */
+    
+    }
+
+    .shows__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .shows__name {
+        text-align: left;
+    }
+
+    .shows__descr {
+        text-align: left;
     }
 
     .shows__list {
@@ -253,13 +267,95 @@
     .guests__card {
         flex-direction: column;
         padding-left: 0;
+        max-height: 644px;
     }
 
-    .guests__list {
-        gap: 350px;
+    .playlists__item {
+        width: calc((100% - 30px)/2);
     }
 
- 
+    .promo__box {
+        flex-direction: column;
+    }
 
+    .promo__pic::before {
+        background-image: url(../img/new.svg);
+        width: 160px;
+        height: 160px;
+        bottom: 20px
+    }
+
+    .about__text {
+        margin-bottom: 30px;
+    }
+
+    .about__pic {
+        position: relative;
+        overflow: visible;
+        display: flex;
+        justify-content: right;
+    }
+
+    .about__pic::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/swirl_pseudo.svg);
+        background-repeat: no-repeat;
+        height: 114px;
+        width: 489px;
+        left: -190px;
+    }
+
+    .about__dawn {
+        width: 112px;
+        height: 112px;
+    }
+
+    .input__wrap {
+        flex-direction: column;
+    }
+
+    .about__inputname {
+        width: 100%;
+    }
+
+    .about__inputemail {
+        width: 100%;
+    }
+
+    .footer__content {
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        gap: 83px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 256px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .header__nav {
+        overflow: hidden;
+    }
+
+    .hero__content {
+        padding-top: 0;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        font-weight: 500;
+        max-width: 235px;
+    }
+
+    .hero__italic {
+        font-weight: 100;
+    }
 
 }

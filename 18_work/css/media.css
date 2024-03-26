@@ -4,11 +4,34 @@
         max-width: 823px;
     }
 
+    .header {
+        position: relative;
+    }
+
     .header__content {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         min-height: 144px;
+    }
+
+    .header__nav::before,
+    .header__nav::after {
+    content: "";
+    position: absolute;
+    left: -250px; 
+    right: -250px;
+    height: 1px; 
+    background-color: #E6E8EC; 
+    z-index: -1; 
+    }
+
+    .header__nav::before {
+        top: -22px;
+    }
+
+    .header__nav::after {
+        bottom: -22px;
     }
 
     .header__logo {
@@ -17,6 +40,7 @@
     }
 
     .header__nav {
+        position: relative;
         order: 2;
         width: 100%;
     }
@@ -30,7 +54,7 @@
     }
 
     .shows__card {
-        width: 254px;
+        width: calc((100% - var(--gap))/2);
     }
 
     .playlists__content {
@@ -224,20 +248,43 @@
     text-align: center;
     }
 
+    .shows__box {
+        flex-direction: column;
+    }
+
+    .archive__top {
+        display: none;
+    }
+
+    .archive__bottom {
+        background-image: url(../img/mic_small.png);
+        background-repeat: no-repeat;
+    }
+
+    .shows__left {
+        background-image: none;
+    }
+
     .shows__title {
     display: flex;
     order: -2; 
     }
 
+    .shows__box {
+        order: 1;
+    }
+
+    .shows__archive {
+        order: 2;
+    }
+
     .shows__btn {
     display: flex;
-    order: 3; 
     }
 
     .shows__text {
     display: flex;
     order: 4;
-    
     }
 
     .shows__info {
@@ -335,9 +382,25 @@
 @media (max-width: 768px) {
 
     .container {
-        width: 256px;
-        margin-left: 30px;
-        margin-right: 30px;
+        min-width: 256px;
+    }
+
+    .header__content {
+        align-items: flex-start;
+        min-height: 140px;
+    }
+
+    .header__logo {
+        width: 113px;
+        height: 45px;
+    }
+
+    .header__search {
+        height: 45px;
+    }
+
+    .header__search {
+        margin-top: -12px;
     }
 
     .header__nav {
@@ -351,11 +414,41 @@
     .hero__title {
         font-size: 40px;
         font-weight: 500;
-        max-width: 235px;
     }
 
     .hero__italic {
         font-weight: 100;
     }
 
+}
+
+@media (max-width: 576px) {
+
+    .podcasts__card {
+        flex-direction: column;
+        min-width: 256px;
+        min-height: 185px;
+    }
+
+    .podcasts__card::before {
+        top: 0;
+    }
+
+    .podcasts__date {
+        top: 0;
+    }
+
+    .podcasts__content {
+        padding-top: 30px;
+        padding-left: 16px;
+        max-height: 113px;
+    }
+
+    .podcasts__subtitle {
+        font-size: 16px;
+    }
+
+    .podcasts__speaker {
+        font-size: 12px;
+    }
 }

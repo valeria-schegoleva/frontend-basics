@@ -15,22 +15,22 @@
         min-height: 144px;
     }
 
-    .header__nav::before,
-    .header__nav::after {
+    .header::before,
+    .header::after {
     content: "";
     position: absolute;
-    left: -250px; 
-    right: -250px;
+    left: 0; 
+    right: 0;
     height: 1px; 
     background-color: #E6E8EC; 
     z-index: -1; 
     }
 
-    .header__nav::before {
-        top: -22px;
+    .header::before {
+        top: 80px;
     }
 
-    .header__nav::after {
+    .header::after {
         bottom: -22px;
     }
 
@@ -424,6 +424,24 @@
 
 @media (max-width: 576px) {
 
+    .container {
+        width: 256px;
+        /* margin: 0 auto; */
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__descr {
+        font-size: 14px;
+    }
+
+    .hero__btn {
+        font-size: 16px;
+        padding: 15px 45px;
+    }
+
     .podcasts__card {
         flex-direction: column;
         min-width: 256px;
@@ -450,5 +468,203 @@
 
     .podcasts__speaker {
         font-size: 12px;
+    }
+
+    .shows__descr {
+        padding: 10px;
+    }
+
+    .shows__name {
+        font-size: 12px;
+    }
+
+    .shows__schedule {
+        font-size: 9px;
+    }
+
+    .shows__details {
+        font-size: 12px;
+        color: #6D31EE;
+    }
+
+    .shows__text {
+        order: 1;
+    }
+
+    .shows__btn {
+        order: 2;
+    }
+
+    .guests__title {
+        font-size: 24px;
+    }
+
+    .guests__textbold {
+        font-size: 14px;
+    }
+
+    .guests__textnormal {
+        font-size: 14px;
+    }
+
+    .playlists__header {
+        min-width: 256px;
+    }
+
+    .playlists__title {
+        font-size: 24px;
+    }
+
+    .playlists__text {
+        font-size: 12px;
+    }
+
+    /* .playlists__photo {
+        max-width: 113px;
+    } */
+
+    .playlists__item {
+        flex-direction: column;
+        min-height: 159px;
+    }
+
+    .item__content {
+        min-width: 46px;
+        padding: 10px;
+    }
+
+    .playlists__name {
+        font-size: 12px;
+    }
+
+    .playlists__descr {
+        font-size: 9px;
+    }
+
+    .playlist_1::before {
+        left: auto;
+    }
+
+    .playlist_2::before {
+        left: auto;
+    }
+
+    .playlist_3::before {
+        left: auto;
+    }
+
+    .playlist_4::before {
+        left: auto;
+    }
+
+    .playlist_5::before {
+        left: auto;
+    }
+
+    .playlist_6::before {
+        left: auto;
+    }
+
+    .playlist_7::before {
+        left: auto;
+    }
+
+    .playlist_8::before {
+        left: auto;
+    }
+
+    .playlist_9::before {
+        left: auto;
+    }
+
+    .playlist_10::before {
+        left: auto;
+    }
+
+    .playlist_11::before {
+        left: auto;
+    }
+
+    .playlist_12::before {
+        left: auto;
+    }
+
+    .promo__pic::before {
+        background-image: url(../img/label_new_567.svg);
+        height: 62px;
+        width: 62px;
+        bottom: auto;
+    }
+
+    .promo__title {
+        font-size: 24px;
+        max-width: 256px;
+    }
+
+    .promo__text {
+        font-size: 14px;
+        max-width: 256px;
+    }
+
+    .promo__content {
+        min-width: 256px;
+    }
+
+
+    .promo__content::before {
+        width: 256px;
+    }
+
+    .btn__text {
+        font-size: 16px;
+    }
+
+    .about__title {
+        font-size: 24px;
+    }
+
+    .about__textbold {
+        font-size: 14px;
+    }
+
+    .about__textnormal {
+        font-size: 14px;
+    }
+
+    .about__pic {
+        display: none;
+    }
+
+    .about__name {
+        font-size: 14px;
+    }
+
+    .about__descr {
+        font-size: 12px;
+    }
+
+    .about__message {
+        border-radius: 20px;
+        font-size: 16px;
+        padding-top: 17px;
+        padding-left: 24px;
+    }
+
+    .about__inputname {
+        font-size: 16px;
+    }
+
+    .about__inputemail {
+        font-size: 16px;
+    }
+
+    .about__send {
+        padding: 17px 45px;
+        font-size: 16px;
+    }
+
+    .footer__list {
+        column-count: 2;
+        gap: 78px;
     }
 }

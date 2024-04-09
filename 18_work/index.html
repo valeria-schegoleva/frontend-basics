@@ -319,6 +319,7 @@
               <li class="guests__card">
                 <div class="guests__photo">
                   <picture>
+                    <source srcset="img/guest1_mobile.png" media="(max-width: 1024px)">
                     <source srcset="img/guest1_mobile.png" media="(max-width: 992px)">
                     <img src="img/guest1.jpg" alt="Ольга Мартынова">
                   </picture>
@@ -508,11 +509,11 @@
               </picture>
             </div>
             <div class="promo__content">
-              <h2 class="promo__title">Будь с нами на одной волне!</h2>
+              <h2 class="promo__title">Будь с нами <br> на одной волне!</h2>
               <p class="promo__text">Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то,
                 что мы только начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
               </p>
-              <p class="promo__text">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор
+              <p class="promo__text-second">Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор
                 всех делатей, ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно
                 трудимся над новыми партиями и дизайном. Спешите приобрести!</p>
               <span class="promo__price">2 800 ₽</span>
@@ -571,7 +572,7 @@
               <li class="about__item ">
                 <div class="about__box">
                   <div class="about__01">
-                    <picture>
+                    <picture class="about__cover">
                       <source srcset="img/about1.jpg" media="(max-width: 992px)">
                       <source srcset="img/guest1_tablet.jpg" media="(max-width: 1200px)">
                       <img src="img/about1.jpg" alt="Дмитрий Гутенберг">
@@ -624,7 +625,7 @@
             <form class="about__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
               <textarea name="about__message" id="message" class="about__message" cols="30" rows="10"
                 placeholder="Что скажете?" aria-label="Введите сообщение" tabindex="1" required></textarea>
-              <div class="about__box">
+              <div class="about__container">
                 <input class="about__inputname" type="text" id="name" name="Имя" placeholder="Имя"
                   aria-label="Введите ваше имя" pattern="[A-Za-z\s]+" tabindex="2" required>
                 <input class="about__inputemail" type="email" id="email" name="Email" placeholder="Email"

@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 144px;
+    padding-top: 10px;
   }
 
   .header::before,
@@ -30,12 +31,14 @@
   }
 
   .header::after {
-    bottom: -22px;
+    bottom: 1px;
   }
 
   .header__logo {
     order: -1;
     margin-right: auto;
+    width: 112px;
+    height: 16px;
   }
 
   .header__nav {
@@ -48,21 +51,72 @@
     gap: 105px;
   }
 
+  .hero__content {
+    min-height: 262px;
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background-size: 256px 285px;
+    background-position: 100% 29%;
+
+  }
+
   .hero__descr {
     max-width: 540px;
+    line-height: 141%;
+    margin-bottom: 24px;
+  }
+
+  .podcasts__title {
+    margin-bottom: 29px;
+  }
+
+  .shows {
+    padding-bottom: 40px;
+  }
+
+  .shows__left {
+    background-position: 0% 83%;
   }
 
   .shows__card {
     width: calc((100% - var(--gap)) / 2);
   }
 
+  .guests__content {
+    padding-bottom: 89px;
+  }
+
+  .guests__textnormal {
+    max-width: 546px;
+    line-height: 160%;
+    margin-bottom: 49px;
+  }
+
+  .guests__photo {
+    min-width: 432px;
+  }
+
+  .guests__descr {
+    line-height: 180%;
+  }
+
+  .playlists {
+    padding-bottom: 43px;
+  }
+
   .playlists__content {
     flex-direction: column;
+    gap: 35px;
+  }
+
+  .playlists__list {
+    gap: 30px;
   }
 
   .playlists__item {
     display: flex;
-    max-height: 112px;
+    flex-direction: row;
+    min-height: 112px;
     width: calc((100% - var(--gap) * 2) / 3);
   }
 
@@ -74,8 +128,12 @@
   .playlists__inner {
     max-height: 112px;
     min-width: 143px;
-    padding: 40px 8px;
+    padding: 37px 8px;
     border-top: 1px solid #e6e8ec;
+  }
+
+  .playlists__name {
+    margin-bottom: 2px;
   }
 
   .playlist-1 {
@@ -175,21 +233,63 @@
 
   .promo__pic {
     align-items: center;
+    top: -18px;
   }
 
   .promo__pic::before {
     background-image: url(../img/label_new_tablet.svg);
     width: 100px;
     height: 100px;
-    top: 100px;
+    top: 128px;
+    left: 0;
   }
 
   .promo__content {
-    min-width: 441px;
+    min-width: 396px;
+  }
+
+  .promo__title {
+    margin-bottom: 48px;
+  }
+
+  .promo__text {
+    line-height: 179%;
+    margin-bottom: 15px;
+  }
+
+  .promo__text-second {
+    line-height: 180%;
+  }
+
+  .promo__box {
+    padding-bottom: 43px;
+  }
+
+  .about__text {
+    max-width: 539px;
+  }
+
+  .about__textbold {
+    margin-bottom: 8px;
+  }
+
+  .about__textnormal {
+    margin-top: 0;
+    min-width: 359px;
+    line-height: 160%;
+  }
+
+  .about__wrap {
+    gap: 10px;
   }
 
   .about__swirl {
     display: none;
+  }
+
+  .about__dawn {
+    width: 260px;
+    height: 265px;
   }
 
   .about__list {
@@ -205,7 +305,16 @@
   }
 
   .about__name {
-    padding-top: 30px;
+    padding-top: 24px;
+    margin-bottom: 7px;
+  }
+
+  .footer {
+    background-position: 2% 91%;
+  }
+
+  .footer__logo {
+    margin-bottom: 15px;
   }
 }
 
@@ -214,15 +323,24 @@
     width: 540px;
   }
 
+  .header__content {
+    padding-top: 4px;
+  }
+
   .header__list {
-    gap: 48px;
+    gap: 54px;
   }
 
   .header__link {
     font-size: 16px;
   }
 
+  .header::after {
+    bottom: 3px;
+  }
+
   .hero__content {
+    padding-top: 33px;
     background-image: none;
   }
 
@@ -254,8 +372,16 @@
   }
 
   .archive-bottom {
+    justify-content: flex-start;
     background-image: url(../img/mic_small.png);
     background-repeat: no-repeat;
+    background-position: 20% 2%;
+    background-size: 68px 90px;
+  }
+
+  .shows {
+    padding-bottom: 0;
+    /* margin-bottom: 30px; */
   }
 
   .shows__left {
@@ -269,10 +395,12 @@
 
   .shows__box {
     order: 1;
+    margin-bottom: -19px;
   }
 
   .shows__archive {
     order: 2;
+    padding-bottom: 3px;
   }
 
   .shows__btn {
@@ -282,6 +410,7 @@
   .shows__text {
     display: flex;
     order: 4;
+    margin-bottom: 0;
   }
 
   .shows__info {
@@ -299,13 +428,46 @@
   }
 
   .shows__list {
+    position: relative;
     order: 0;
-    padding-top: 120px;
+    padding-top: 90px;
     padding-bottom: 60px;
+  }
+
+  .shows__list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e6e8ec;
+    z-index: -2;
+    bottom: 0;
+  }
+
+  .shows__btn {
+    padding: 9px 57px;
+    margin-bottom: 15px;
+  }
+
+  .shows__text {
+    max-width: 255px;
   }
 
   .about__wrap {
     flex-direction: column;
+  }
+
+  .guests__list {
+    gap: 47px;
+  }
+
+  .guests__content {
+    padding-top: 96px;
+  }
+
+  .guests__photo {
+    max-height: 340px;
   }
 
   .guests__card {
@@ -314,23 +476,65 @@
     max-height: 644px;
   }
 
+  .guests__descr {
+    max-width: 362px;
+    margin-bottom: 27px;
+  }
+
+  .playlists {
+    padding-bottom: 61px;
+  }
+
+  .playlists__text {
+    margin-bottom: 8px;
+    line-height: 130%;
+  }
+
+  .playlists__content {
+    gap: 30px;
+  }
+
   .playlists__item {
     width: calc((100% - 30px) / 2);
   }
 
   .promo__box {
     flex-direction: column;
+    padding-top: 71px;
+    gap: 40px;
   }
 
   .promo__pic::before {
     background-image: url(../img/new.svg);
     width: 160px;
     height: 160px;
-    bottom: 20px;
+    top: 0;
+  }
+
+  .promo__title {
+    line-height: 100%;
+  }
+
+  .promo__content::before {
+    background-image: url(../img/Vector\ wave\ 768.svg);
+    width: 539px;
+    top: 101px;
+  }
+
+  .promo__text {
+    min-width: 540px;
+  }
+
+  .promo__text-second {
+    min-width: 540px;
   }
 
   .about__text {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+  }
+
+  .about__textbold {
+    margin-bottom: 6px;
   }
 
   .about__pic {
@@ -345,9 +549,25 @@
     position: absolute;
     background-image: url(../img/swirl_pseudo.svg);
     background-repeat: no-repeat;
-    height: 114px;
-    width: 489px;
-    left: -190px;
+    height: 110px;
+    width: 565px;
+    left: -115px;
+  }
+
+  .about__wrap {
+    margin-bottom: 32px;
+  }
+
+  .about__list {
+    gap: 30px;
+  }
+
+  .about__03 {
+    max-height: 255px;
+  }
+
+  .about__descr {
+    line-height: 150%;
   }
 
   .about__dawn {
@@ -375,7 +595,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     min-width: 256px;
   }

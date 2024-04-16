@@ -1001,6 +1001,7 @@
 
   .promo__box {
     gap: 0;
+    padding-bottom: 52px;
   }
 
   .promo__pic {
@@ -1036,6 +1037,7 @@
 
   .promo__price {
     font-size: 24px;
+    margin-bottom: 18px;
   }
 
   .promo__content {
@@ -1047,9 +1049,9 @@
   }
 
   .promo__btn {
-    padding: 0;
+    padding: 17px 16px;
     min-width: 256px;
-    min-height: 50px;
+    max-height: 50px;
     font-size: 16px;
   }
 
@@ -1057,12 +1059,24 @@
     font-size: 16px;
   }
 
+  .about__content {
+    padding-top: 52px;
+    padding-bottom: 44px;
+  }
+
   .about__title {
     font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .about__text {
+    margin-bottom: 0;
   }
 
   .about__textbold {
+    margin-bottom: 4px;
     font-size: 14px;
+    line-height: 150%;
   }
 
   .about__textnormal {
@@ -1070,11 +1084,26 @@
     min-width: 256px;
   }
 
+  .about__wrap {
+    margin-bottom: 27px;
+  }
+
+  .about__list {
+    gap: 24px;
+    margin-bottom: 19px;
+  }
+
+  .about__item {
+    flex: 1;
+    min-height: 214px;
+  }
+
   .about__pic {
     display: none;
   }
 
   .about__name {
+    padding-top: 5px;
     font-size: 14px;
   }
 
@@ -1085,25 +1114,65 @@
   .about__message {
     border-radius: 20px;
     font-size: 16px;
-    padding-top: 17px;
+    padding-top: 15px;
     padding-left: 24px;
   }
 
   .about__inputname {
+    padding: 0;
+    padding-left: 25px;
+    max-height: 48px;
     font-size: 16px;
   }
 
   .about__inputemail {
+    padding: 0;
+    padding-left: 25px;
+    max-height: 48px;
     font-size: 16px;
   }
 
   .about__send {
     padding: 17px 45px;
+    max-width: 172px;
     font-size: 16px;
+  }
+
+  .about__user-consent {
+    margin-top: -11px;
+  }
+
+  .about__user-consent label {
+    font-size: 9px;
+  }
+
+  .about__check-box {
+    margin-left: -2.1em;
+    width: 1.55em;
+    height: 1.65em;
+  }
+
+  .footer {
+    background-position: 0.4% 95%;
+  }
+
+  .footer__content {
+    padding-top: 53px;
+    padding-bottom: 83px;
   }
 
   .footer__list {
     column-count: 2;
-    gap: 78px;
+    column-gap: 33px;
+    row-gap: 30px;
+    margin-left: -27px;
+  }
+
+  .nav-item {
+    font-size: 12px;
+  }
+
+  .footer__trademark {
+    font-size: 12px;
   }
 }
